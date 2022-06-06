@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images4.alphacoders.com/111/thumb-1920-1113439.jpg');
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: rgb(223, 15, 39);
+    font-weight: normal;
+    font-size: 6rem;
+    margin-top: -0.5rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content h1 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+.content h2{
+    font-weight: bold;
+    color: brown;
+    font-size: 4rem;
+    animation-duration: 3s;
+    animation-name: slidein2;
+}
+.content span{
+    color: rgb(133, 124, 124);
+}
+.countdown{
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+.times{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.times{
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 98%, 0.756);
+}
+
+
+
+@keyframes slidein{
+    from {
+        margin-left: -200%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@keyframes slidein2{
+    from {
+        margin-left: -200%;
+        width: 300%
+    }
+    to {
+        margin-left: 80%;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 700px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .countdown{
+        font-size: 3rem;
+    }
+    .times{
+        font-size: 1.5rem;
+    }
+    @keyframes slidein{
+        from {
+            margin-left: -200%;
+            width: 300%
+        }
+        to {
+            margin-left: 9%;
+            width: 100%;
+        }
+    }
+    
+    @keyframes slidein2{
+        from {
+            margin-left: -200%;
+            width: 300%
+        }
+        to {
+            margin-left: 52%;
+            width: 100%;
+        }
+    }
+}
