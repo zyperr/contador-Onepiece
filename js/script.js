@@ -1,5 +1,5 @@
 // Setup End Date for Countdown (getTime == Time in Milleseconds)
-let launchDate = new Date("august 25, 2022 01:00:00").getTime();
+let launchDate = new Date("Dec 17, 2022 01:00:00").getTime();
 
 // un tick cada segundo 
 let timer = setInterval(tick, 1000);
@@ -16,7 +16,7 @@ if (t > 0) {
     // calculo para days
     let days = Math.floor(t / (1000 * 60 * 60 * 24));
     // prefix any number below 10 with a "0" E.g. 1 = 01
-    if (days < 10) { days = "0" + days; }
+    if (days < 10) { days = "0" + 7; }
     
     // calculo para hours
     let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
