@@ -11,7 +11,10 @@ let now = new Date().getTime();
 let t = launchDate - now;
 
   // verificar si esta por arriba de 0
-if (t > 0) {
+    if (t <= 0) {
+    // Increase launch date by 7 days if time is 0 or below
+    launchDate += 7 * 24 * 60 * 60 * 1000;
+    }
     //  Days, hours, seconds and minutes
     // calculo para days
     let days = Math.floor(t / (1000 * 60 * 60 * 24));
@@ -36,4 +39,4 @@ if (t > 0) {
     // mostrar el contador en document con la clase .coutdown
     document.querySelector('.countdown').innerText = time;
 }
-}
+
